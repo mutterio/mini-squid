@@ -1,7 +1,3 @@
-#!/bin/sh
+#!/bin/sh -e
 
-start() {
-  squid -N & wait
-}
-
-start
+squid -N -d 3
